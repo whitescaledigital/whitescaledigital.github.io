@@ -18,14 +18,21 @@
       font-family: Arial, sans-serif;
       color: #ffffff;
       text-align: center;
-      overflow: hidden; /* removes desktop scrollbars */
+      overflow: hidden;
+    }
+
+    header {
+      position: absolute;
+      top: 15px;
+      width: 100%;
+      text-align: center;
     }
 
     header h2 {
       font-size: 1.4rem;
-      color: #ffd241;
+      color: #ffffff; /* changed to white */
       font-weight: 600;
-      margin: 0 0 20px 0;
+      margin: 0;
     }
 
     img {
@@ -80,13 +87,12 @@
       gap: 6px;
     }
 
-    /* Mobile fix */
     @media (max-height: 700px) {
       body {
-        overflow-y: auto; /* allow vertical scroll if screen is too short */
+        overflow-y: auto;
       }
       footer {
-        position: static; /* footer will flow at bottom naturally */
+        position: static;
         margin-top: 20px;
       }
     }
